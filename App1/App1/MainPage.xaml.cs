@@ -26,5 +26,16 @@ namespace App1
         {
             this.InitializeComponent();
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Button b = (Button)sender;
+            displayx.Text = displayx.Text + '1';
+        }
     }
 }
