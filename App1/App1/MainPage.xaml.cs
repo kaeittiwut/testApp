@@ -45,6 +45,26 @@ namespace App1
                 }
             }
         }
+        
+        enum Operation { MINUS=1,PLUS=2,DIVIDE=3,MULTIPLY=4,NUMBER=5 }
+        private void AddOperation(Operation operation)
+        {
+            if (result.Text.Length == 1 && result.Text == "0") return;
+
+            if (!char.IsNumber(result.Text.Last()))
+            {
+                result.Text = result.Text.Substring(0, result.Text.Length - 1);
+            }
+
+            switch (operation)
+            {
+                case Operation.MINUS: result.Text += "-"; break;
+                case Operation.PLUS: result.Text += "+"; break;
+                case Operation.DIVIDE: result.Text += "÷"; break;
+                case Operation.MULTIPLY: result.Text += "x"; break;
+
+            }
+        }
 
         private void bt7_Click(object sender, RoutedEventArgs e)
         {
