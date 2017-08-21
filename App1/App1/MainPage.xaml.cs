@@ -27,15 +27,113 @@ namespace App1
             this.InitializeComponent();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void addNumber(double number)
+        {
+            if (char.IsNumber(result.Text.Last()))
+            {
+                if(result.Text.Length == 1 && result.Text == "0")
+                {
+                    result.Text = string.Empty;
+                }
+                result.Text += number;
+            }
+            else
+            {
+                if (number != 0)
+                {
+                    result.Text += number;
+                }
+            }
+        }
+
+        private void bt7_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void bt8_Click(object sender, RoutedEventArgs e)
         {
-            Button b = (Button)sender;
-            displayx.Text = displayx.Text + '1';
+
+        }
+
+        private void bt9_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void bt4_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void bt5_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void bt6_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void bt1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void bt2_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void bt3_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void bt0_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btDot_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btPlus_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btMinus_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btMultiply_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btDivide_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void bteClear_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btCancle_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btEqual_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

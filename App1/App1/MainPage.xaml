@@ -8,24 +8,27 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource AccentButtonForeground}">
-        <Button FontSize="50" Content="7" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="74,172,870,388" Width="80" Height="80" Click="Button_Click"/>
-        <Button FontSize="50" Content="8" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="196,172,748,388" Width="80" Height="80" Click="Button_Click"/>
-        <Button FontSize="50" Content="9" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="319,172,625,388" Width="80" Height="80" Click="Button_Click"/>
-        <Button FontSize="50" Content="4" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="74,290,870,270" Width="80" Height="80" Click="Button_Click"/>
-        <Button FontSize="50" Content="5" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="196,290,748,270" Width="80" Height="80" Click="Button_Click"/>
-        <Button FontSize="50" Content="6" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="319,290,625,270" Width="80" Height="80" Click="Button_Click"/>
-        <Button FontSize="50" Content="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="74,405,870,155" Width="80" Height="80" Click="Button_Click"/>
-        <Button FontSize="50" Content="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="196,405,748,155" Width="80" Height="80" Click="Button_Click"/>
-        <Button FontSize="50" Content="3" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="319,405,625,155" Width="80" Height="80" Click="Button_Click"/>
-        <Button FontSize="50" Content="0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="74,516,748,44" Width="202" Height="80" Click="Button_Click"/>
-        <Button FontSize="50" Content="." HorizontalAlignment="Center" VerticalAlignment="Center" Margin="319,516,625,44" Width="80" Height="80" Click="Button_Click"/>
-        <Button FontSize="50" Content="+" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="441,516,503,44" Width="80" Height="80" Click="Button_Click"/>
-        <Button FontSize="50" Content="-" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="441,405,503,155" Width="80" Height="80" Click="Button_Click" />
-        <Button FontSize="50" Content="x" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="441,290,503,270" Width="80" Height="80" Click="Button_Click" />
-        <Button FontSize="50" Content="÷" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="441,172,503,388" Width="80" Height="80" Click="Button_Click"/>
-        <Button FontSize="50" Content="C" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="558,290,386,270" Width="80" Height="80" Click="Button_Click"/>
-        <Button FontSize="50" Content="CE" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="558,172,386,388" Width="80" Height="80" Click="Button_Click"/>
-        <TextBox x:Name="displayx" HorizontalAlignment="Left" Margin="74,36,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="96" Width="564" FontSize="50" TextAlignment="Right" TextChanged="TextBox_TextChanged"/>
-        <Button FontSize="50" Content="=" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="558,405,386,44" Width="80" Height="191" Click="Button_Click"/>
+        <Button Click="bt7_Click" x:Name="bt7" FontSize="50" Content="7" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="74,172,870,388" Width="80" Height="80"/>
+        <Button Click="bt8_Click" x:Name="bt8" FontSize="50" Content="8" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="196,172,748,388" Width="80" Height="80"/>
+        <Button Click="bt9_Click" x:Name="bt9" FontSize="50" Content="9" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="319,172,625,388" Width="80" Height="80"/>
+        <Button Click="bt4_Click" x:Name="bt4" FontSize="50" Content="4" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="74,290,870,270" Width="80" Height="80"/>
+        <Button Click="bt5_Click" x:Name="bt5" FontSize="50" Content="5" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="196,290,748,270" Width="80" Height="80"/>
+        <Button Click="bt6_Click" x:Name="bt6" FontSize="50" Content="6" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="319,290,625,270" Width="80" Height="80"/>
+        <Button Click="bt1_Click" x:Name="bt1" FontSize="50" Content="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="74,405,870,155" Width="80" Height="80"/>
+        <Button Click="bt2_Click" x:Name="bt2" FontSize="50" Content="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="196,405,748,155" Width="80" Height="80"/>
+        <Button Click="bt3_Click" x:Name="bt3" FontSize="50" Content="3" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="319,405,625,155" Width="80" Height="80"/>
+        <Button Click="bt0_Click" x:Name="bt0" FontSize="50" Content="0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="74,516,748,44" Width="202" Height="80"/>
+        <Button Click="btDot_Click" x:Name="btDot" FontSize="50" Content="." HorizontalAlignment="Center" VerticalAlignment="Center" Margin="319,516,625,44" Width="80" Height="80"/>
+        <Button Click="btPlus_Click" x:Name="btPlus" FontSize="50" Content="+" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="441,516,503,44" Width="80" Height="80"/>
+        <Button Click="btMinus_Click" x:Name="btMinus" FontSize="50" Content="-" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="441,405,503,155" Width="80" Height="80"/>
+        <Button Click="btMultiply_Click" x:Name="btMultiply" FontSize="50" Content="x" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="441,290,503,270" Width="80" Height="80"/>
+        <Button Click="btDivide_Click" x:Name="btDivide" FontSize="50" Content="÷" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="441,172,503,388" Width="80" Height="80"/>
+        <Button Click="bteClear_Click" x:Name="bteClear" FontSize="50" Content="C" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="558,290,386,270" Width="80" Height="80"/>
+        <Button Click="btCancle_Click" x:Name="btCancle" FontSize="50" Content="CE" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="558,172,386,388" Width="80" Height="80"/>
+        <Button Click="btEqual_Click" x:Name="btEqual" FontSize="50" Content="=" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="558,405,386,44" Width="80" Height="191"/>
+        <TextBox 
+            IsReadOnly="True"
+            x:Name="result" HorizontalAlignment="Left" Margin="74,36,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="96" Width="564" FontSize="50"/>
+
     </Grid>
 </Page>
