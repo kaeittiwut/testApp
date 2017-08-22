@@ -119,6 +119,12 @@ namespace App1
             AddNumber(0);
         }
 
+        private void btDot_Click(object sender, RoutedEventArgs e)
+        {
+            //if(!result.Text.Contains("."))
+            result.Text += ".";
+        }
+
         private void btPlus_Click(object sender, RoutedEventArgs e)
         {
             AddOperation(Operation.PLUS);
@@ -247,6 +253,8 @@ namespace App1
             double value = Calc(tree);      //evaluate tree to culculate finish result
             result.Text = value.ToString();
         }
+
+       
     }
 }
 #endregion
