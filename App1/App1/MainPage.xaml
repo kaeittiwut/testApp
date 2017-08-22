@@ -17,14 +17,13 @@
         <Button Click="bt1_Click" x:Name="bt1" FontSize="50" Content="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="74,405,870,155" Width="80" Height="80"/>
         <Button Click="bt2_Click" x:Name="bt2" FontSize="50" Content="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="196,405,748,155" Width="80" Height="80"/>
         <Button Click="bt3_Click" x:Name="bt3" FontSize="50" Content="3" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="319,405,625,155" Width="80" Height="80"/>
-        <Button Click="bt0_Click" x:Name="bt0" FontSize="50" Content="0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="74,516,748,44" Width="202" Height="80"/>
-        <Button Click="btDot_Click" x:Name="btDot" FontSize="50" Content="." HorizontalAlignment="Center" VerticalAlignment="Center" Margin="319,516,625,44" Width="80" Height="80"/>
+        <Button Click="bt0_Click" x:Name="bt0" FontSize="50" Content="0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="74,516,625,44" Width="325" Height="80"/>
         <Button Click="btPlus_Click" x:Name="btPlus" FontSize="50" Content="+" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="441,516,503,44" Width="80" Height="80"/>
         <Button Click="btMinus_Click" x:Name="btMinus" FontSize="50" Content="-" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="441,405,503,155" Width="80" Height="80"/>
         <Button Click="btMultiply_Click" x:Name="btMultiply" FontSize="50" Content="x" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="441,290,503,270" Width="80" Height="80"/>
         <Button Click="btDivide_Click" x:Name="btDivide" FontSize="50" Content="÷" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="441,172,503,388" Width="80" Height="80"/>
         <Button Click="bteClear_Click" x:Name="bteClear" FontSize="50" Content="C" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="558,290,386,270" Width="80" Height="80"/>
-        <Button Click="btCancle_Click" x:Name="btCancle" FontSize="50" Content="CE" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="558,172,386,388" Width="80" Height="80"/>
+        <Button Click="btPercen_Click" x:Name="btPercen" FontSize="50" Content="%" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="558,172,386,388" Width="80" Height="80"/>
         <Button Click="btEqual_Click" x:Name="btEqual" FontSize="50" Content="=" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="558,405,386,44" Width="80" Height="191"/>
         <TextBox 
             IsReadOnly="True"
